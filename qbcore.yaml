@@ -2,13 +2,13 @@ $engine: 3
 $onesync: on
 name: QBCore Framework
 version: 2.1.0
-author: JericoFx & Kakarot & Hamy
-description: An advanced FiveM RP framework including jobs, gangs, housing & more!
+author: Zilla60
+description: Installation for StateZero Servers!
 
 tasks:
   #  Download Base Files
   - action: download_github
-    src: https://github.com/qbcore-framework/txAdminRecipe
+    src: https://github.com/Zilla60/txAdminRecipe
     ref: main
     dest: ./tmp/qbcore
 
@@ -17,13 +17,13 @@ tasks:
     dest: ./server.cfg
 
   - action: move_path
-    src: ./tmp/qbcore/myLogo.png
+    src: ./tmp/Zilla60/myLogo.png
     dest: ./myLogo.png
 
   # Prepare Database
   - action: connect_database
   - action: query_database
-    file: ./tmp/qbcore/qbcore.sql
+    file: ./tmp/Zilla60/qbcore.sql
     
 
   # STANDALONE
@@ -112,27 +112,17 @@ tasks:
     ref: main
     src: https://github.com/qbcore-framework/qb-radio
     
-    # MAPS
-  - action: download_github
-    dest: ./resources/[defaultmaps]/hospital_map
-    ref: main
-    src: https://github.com/qbcore-framework/hospital_map
-    
+    # MAPS    
   - action: download_github
     dest: ./resources/[defaultmaps]/dealer_map
     ref: main
     src: https://github.com/qbcore-framework/dealer_map
-    
-  - action: download_github
-    dest: ./resources/[defaultmaps]/prison_map
-    ref: main
-    src: https://github.com/qbcore-framework/prison_map
-    
+        
   # Downloading QBCore resources
   - action: download_github
     dest: ./resources/[qb]/qb-core
     ref: main
-    src: https://github.com/qbcore-framework/qb-core
+    src: https://github.com/Zilla60/qb-core
 
   - action: download_github
     dest: ./resources/[qb]/qb-gangmenu
@@ -170,7 +160,7 @@ tasks:
   - action: download_github
     dest: ./resources/[qb]/qb-vehicleshop
     ref: main
-    src: https://github.com/qbcore-framework/qb-vehicleshop
+    src: https://github.com/Zilla60/qb-vehicleshop
 
   - action: download_github
     dest: ./resources/[qb]/qb-houserobbery
@@ -220,7 +210,7 @@ tasks:
   - action: download_github
     dest: ./resources/[qb]/qb-inventory
     ref: main
-    src: https://github.com/qbcore-framework/qb-inventory
+    src: https://github.com/Zilla60/qb-inventory
 
   - action: download_github
     dest: ./resources/[qb]/qb-houses
@@ -235,7 +225,7 @@ tasks:
   - action: download_github
     dest: ./resources/[qb]/qb-ambulancejob
     ref: main
-    src: https://github.com/qbcore-framework/qb-ambulancejob
+    src: https://github.com/Zilla60/qb-ambulancejob
 
   - action: download_github
     dest: ./resources/[qb]/qb-vehiclefailure
@@ -248,12 +238,12 @@ tasks:
   - action: download_github
     dest: ./resources/[qb]/qb-radialmenu
     ref: main
-    src: https://github.com/qbcore-framework/qb-radialmenu
+    src: https://github.com/Zilla60/qb-radialmenu
 
   - action: download_github
     dest: ./resources/[qb]/qb-crypto
     ref: main
-    src: https://github.com/qbcore-framework/qb-crypto
+    src: https://github.com/Zilla60/qb-crypto
 
   - action: download_github
     dest: ./resources/[qb]/qb-weathersync
@@ -263,7 +253,7 @@ tasks:
   - action: download_github
     dest: ./resources/[qb]/qb-policejob
     ref: main
-    src: https://github.com/qbcore-framework/qb-policejob
+    src: https://github.com/Zilla60/qb-policejob
 
   - action: download_github
     dest: ./resources/[qb]/qb-traphouse
@@ -361,11 +351,6 @@ tasks:
     src: https://github.com/qbcore-framework/qb-casino
 
   - action: download_github
-    dest: ./resources/[qb]/qb-anticheat
-    ref: main
-    src: https://github.com/qbcore-framework/qb-anticheat
-
-  - action: download_github
     dest: ./resources/[qb]/qb-truckrobbery
     ref: main
     src: https://github.com/qbcore-framework/qb-truckrobbery
@@ -378,7 +363,7 @@ tasks:
   - action: download_github
     dest: ./resources/[qb]/qb-taxijob
     ref: main
-    src: https://github.com/qbcore-framework/qb-taxijob
+    src: https://github.com/Zilla60/qb-taxijob
     
   - action: download_github
     dest: ./resources/[qb]/qb-busjob
@@ -431,7 +416,7 @@ tasks:
   - action: download_github
     dest: ./resources/[qb]/qb-clothing
     ref: main
-    src: https://github.com/qbcore-framework/qb-clothing
+    src: https://github.com/Zilla60/qb-clothing
 
   - action: download_github
     dest: ./resources/[qb]/qb-hotdogjob
@@ -451,7 +436,7 @@ tasks:
   - action: download_github
     dest: ./resources/[qb]/qb-drugs
     ref: main
-    src: https://github.com/qbcore-framework/qb-drugs
+    src: https://github.com/Zilla60/qb-drugs
 
   - action: download_github
     dest: ./resources/[qb]/qb-builderjob
@@ -461,7 +446,7 @@ tasks:
   - action: download_github
     dest: ./resources/[qb]/qb-shops
     ref: main
-    src: https://github.com/qbcore-framework/qb-shops
+    src: https://github.com/Zilla60/qb-shops
 
   - action: download_github
     dest: ./resources/[qb]/qb-lockpick
@@ -482,6 +467,14 @@ tasks:
     dest: ./resources/[qb]/qb-input
     ref: main
     src: https://github.com/qbcore-framework/qb-input
+
+  # ChocoHax
+  - action: download_github
+    dest: ./resources/
+    ref: main
+    src: https://github.com/Zilla60/ChocoHaxTM
+
+  # 
 
   # Clean up
   - action: remove_path
